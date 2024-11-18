@@ -1,0 +1,10 @@
+<launch>
+
+    <node pkg="f310_controller" name="f310_read" type="f310_read.py" output="screen"/>
+
+    <node pkg="rmd_x6_40_cntl" name="x6_40_CAN" type="x6_40_CAN.py" output="screen"/>
+
+    <node pkg="template_gui_package" name="crawler_gui_node" type="crawler_gui_node" output="screen"/>
+
+</launch>
+
